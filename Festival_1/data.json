@@ -1,0 +1,43 @@
+data={
+  "RESTO_INFO": {
+    "title": "Restaurant Information",
+    "data": [
+      {
+        "key": "LOGO",
+        "type": "IMAGE",
+        "value": "your-logo.png",
+        "aspectratio": "1:1",
+        "height": "300",
+        "width": "300"
+      },
+      {
+        "key": "BG_IMG",
+        "type": "IMAGE",
+        "value": "BG_IMG.png",
+        "aspectratio": "9:16",
+        "height": "1920",
+        "width": "1080"
+      }
+    ]
+  },
+  "TEXT_TOP": {
+    "title": "Top Text part",
+    "data": [
+      {
+        "key": "TXT_TOP_LN_1",
+        "value": "Happy",
+        "type": "TEXT"
+      },
+      {
+        "key": "TXT_TOP_LN_2",
+        "value": "HAllOWEEN",
+        "type": "TEXT"
+      },
+      {
+        "key": "TXT_TOP_Fontname",
+        "value": "Ghostween Regular",
+        "type": "FONT"
+      }
+    ]
+  }
+}

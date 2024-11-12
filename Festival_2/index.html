@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="data.json"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.4" />
+  <title>Festival 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=FontName" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Georgia Pro";
+      src: url("./font/GeorgiaPro-Regular.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Sloop Script Pro";
+      src: url("./font/Sloop-ScriptThree.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body,
+    .body {
+      margin: 0;
+      padding: 0;
+      width: 1080px;
+      height: 1920px;
+      max-width: 1080px;
+      max-height: 1920px;
+      position: relative;
+      background-color: #fff;
+    }
+
+    #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    p {
+      line-height: inherit;
+    }
+
+    .desktop_hide,
+    .desktop_hide table {
+      mso-hide: all;
+      display: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+
+    .image_block img+div {
+      display: none;
+    }
+
+    /* Start - Template specific custom CSS */
+    .template-container {
+      table-layout: fixed;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      background-color: #171717;
+      width: 1080px;
+      height: 1920px;
+      max-width: 1080px;
+      max-height: 1920px;
+    }
+
+    .template-container .template-container-column {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .bg-image .bg-image-column {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .bg-image .bg-image-column {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .content-wrapper {
+      color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      table-layout: fixed;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .content-wrapper .content-wrapper-column {
+      font-weight: 600;
+      text-align: left;
+      padding: 0;
+      vertical-align: top;
+      border: 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .resto-info {
+      width: 100%;
+      height: auto;
+      table-layout: fixed;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .top-part-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+      top: -50px;
+    }
+
+    .top-ln-1 {
+      width: 550px;
+      text-align: center;
+      font-size: 40px;
+      color: #000000;
+      font-family: FontName;
+      font-weight: 100;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .top-title-1 {
+      width: 900px;
+      text-align: center;
+      font-weight: 100;
+      font-size: 130px;
+      color: #16180c;
+      font-family: FontName;
+      line-height: 1.5;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .top-title-2 {
+      width: 800px;
+      font-weight: 100;
+      font-size: 195px;
+      color: #17150f;
+      font-family: FontName;
+      position: absolute;
+      top: 70%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .timing-part-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 13%;
+    }
+
+    .month-part {
+      width: 300px;
+      font-size: 40px;
+      color: #000000;
+      font-weight: bold;
+      font-family: FontName;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .date-part {
+      width: 200px;
+      font-size: 120px;
+      color: #000000;
+      font-weight: bold;
+      font-family: FontName;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .time-part {
+      text-align: end;
+      width: 300px;
+      font-size: 40px;
+      color: #000000;
+      font-weight: bold;
+      font-family: FontName;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .resto-information {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      line-height: 1.5;
+      margin-top: 2%;
+    }
+
+    .resto-address {
+      width: 800px;
+      text-align: center;
+      font-size: 45px;
+      color: #000000;
+      font-weight: bold;
+      font-family: FontName;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .resto-contact {
+      width: 800px;
+      font-size: 46px;
+      color: #000000;
+      font-weight: bold;
+      font-family: FontName;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+
+    .resto-website {
+      width: 700px;
+      font-size: 46px;
+      color: #16180c;
+      font-weight: bold;
+      font-family: FontName;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+
+    .fodex-logo {
+      position: absolute;
+      bottom: 4%;
+      right: 10%;
+    }
+  </style>
+  <script>
+    function clickMe(section) {
+      if (!section) {
+        return;
+      }
+      var s = section.includes(":") ? section.split(":")[0] : section;
+      console.log(s);
+    }
+  </script>
+</head>
+
+<body class="body">
+  <table border="0px" cellpadding="0" cellspacing="0" class="template-container">
+    <tbody>
+      <tr>
+        <td class="template-container-column">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" style="
+                background-color: #171717;
+                background-image: url(BG_IMG);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                table-layout: fixed;
+                vertical-align: top;
+                width: 100%;
+                height: 100%;
+              " id="BG_IMG">
+            <tbody>
+              <tr>
+                <td class="bg-image-column">
+                  <!-- Start: BG Image Header -->
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="content-wrapper"
+                    role="presentation">
+                    <tbody>
+                      <tr>
+                        <td class="content-wrapper-column">
+                          <!-- End: BG Image Header -->
+
+                          <!-- Start: Content -->
+                          <table onclick="clickMe('RESTO_INFO')" border="0" cellpadding="0" cellspacing="0"
+                            class="resto-info" role="presentation" style="width: 100%;">
+                            <tr>
+                              <td>
+                                <div class="yourLogo-container">
+                                  <img alt="Yourlogo" id="LOGO" src="LOGO" title="Yourlogo" style="
+                                              display: inline-block;
+                                              border: 0;
+                                              width: 253px;
+                                              height: 250px;
+                                              cursor: pointer;
+                                              object-fit: cover;
+                                              object-position: center;
+                                              position: relative;
+                                              top: 35px;
+                                              left: 35px;
+                                              scale: 0.8;
+                                              " />
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+
+                          <table onclick="clickMe('TOP_PART')" border="0" cellpadding="0" cellspacing="0"
+                            class="top-part" role="presentation" style="width: 100%;">
+                            <tr>
+                              <td>
+                                <div class="top-part-container">
+                                  <div class="top-ln-1" id="TOP_LN_1">
+                                    TOP_LN_1
+                                  </div>
+                                  <div class="top-title-1" id="TOP_TITLE_1">
+                                    TOP_TITLE_1
+                                  </div>
+                                  <div class="top-title-2" id="TOP_TITLE_2">
+                                    TOP_TITLE_2
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+
+                          <table onclick="clickMe('RESTO_INFO')" border="0" cellpadding="0" cellspacing="0"
+                            class="resto-part" role="presentation" style="width: 100%;">
+                            <tr>
+                              <td>
+                                <div class="timing-part-container">
+                                  <div class="month-part" id="RESTO_MONTH">
+                                    RESTO_MONTH
+                                  </div>
+                                  <div class="date-part" id="RESTO_DATE">
+                                    RESTO_DATE
+                                  </div>
+                                  <div class="time-part" id="RESTO_TIME">
+                                    RESTO_TIME
+                                  </div>
+                                </div>
+
+                                <div class="resto-information">
+                                  <div class="resto-address" id="RESTO_ADD">
+                                    RESTO_ADD
+                                  </div>
+                                  <div class="resto-contact" id="RESTO_CONTACT">
+                                    RESTO_CONTACT
+                                  </div>
+                                  <div class="resto-website" id="RESTO_WEB">
+                                    RESTO_WEB
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table border="0" cellpadding="0" cellspacing="0" class="footer2" role="presentation"
+                            width="100%">
+                            <tr>
+                              <td class="fodex-logo">
+                                <img alt="footer-fodex-logo" src="fodx-logo-black.png" title="Footer Fodex Logo" style="
+                                              width: 126px;
+                                              height: 75px;
+                                              display: inline-block;
+                                              object-fit: cover;
+                                              object-position: center;
+                                            " />
+                              </td>
+                            </tr>
+                          </table>
+                          <!-- End: Content -->
+
+                          <!-- Start: BG Image Footer -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<script type="text/javascript" src="getParams.js"></script>
+
+</html>

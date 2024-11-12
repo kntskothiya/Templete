@@ -1,0 +1,63 @@
+data={
+  "RESTO_INFO": {
+    "title": "Restaurant Information",
+    "data": [
+      {
+        "key": "LOGO",
+        "type": "IMAGE",
+        "value": "your-logo.png",
+        "aspectratio": "1:1",
+        "height": "367",
+        "width": "363"
+      },
+      {
+        "key": "BG_IMG",
+        "type": "IMAGE",
+        "value": "BG_IMG.png",
+        "aspectratio": "9:16",
+        "height": "1920",
+        "width": "1080"
+      },
+      {
+        "key": "WEB_TEXT",
+        "value": "@reallygreatsite",
+        "type": "TEXT"
+      },
+      {
+        "key": "WEB_FontName",
+        "value": "Arimo",
+        "type": "FONT"
+      }
+    ]
+  },
+  "FESTIVAL_WISH_TEXT": {
+    "title": "Festival Part",
+    "data": [
+      {
+        "key": "FEST_TITLE_1",
+        "value": "Happy",
+        "type": "TEXT"
+      },
+      {
+        "key": "FEST_TITLE_2",
+        "value": "New  year",
+        "type": "TEXT"
+      },
+      {
+        "key": "FEST_TITLE_FontName",
+        "value": "Apricot Regular",
+        "type": "FONT"
+      },
+      {
+        "key": "FEST_TEXT",
+        "value": "WISHING YOU AND YOUR FAMILY A HAPPY NEW YEAR FILLED WITH HOPE, HEALTH AND HAPPINESS",
+        "type": "TEXT"
+      },
+      {
+        "key": "FEST_FontName",
+        "value": "Futura",
+        "type": "FONT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+data={
+  "RESTO_INFO": {
+    "title": "Restaurant Information",
+    "data": [
+      {
+        "key": "LOGO",
+        "type": "IMAGE",
+        "value": "your-logo.png",
+        "aspectratio": "1:1",
+        "width": "253",
+        "height": "250"
+      },
+      {
+        "key": "BG_IMG",
+        "type": "IMAGE",
+        "value": "BG_IMG.png",
+        "aspectratio": "9:16",
+        "width": "1080",
+        "height": "1920"
+      },
+      {
+        "key": "RESTO_MONTH",
+        "value": "DECEMBER",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_DATE",
+        "value": "25",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_TIME",
+        "value": "AT 8:30 PM",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_ADD",
+        "value": "123 Anywhere St., Any City",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_CONTACT",
+        "value": "RSVP to +123-456-78-90",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_WEB",
+        "value": "@reallygreatsite",
+        "type": "TEXT"
+      },
+      {
+        "key": "RESTO_FontName",
+        "value": "Georgia Pro",
+        "type": "FONT"
+      }
+    ]
+  },
+  "TOP_PART": {
+    "title": "Top Content Part",
+    "data": [
+      {
+        "key": "TOP_LN_1",
+        "value": "You are invited to the",
+        "type": "TEXT"
+      },
+      {
+        "key": "TOP_TITLE_1",
+        "value": "CHRISTMAS",
+        "type": "TEXT"
+      },
+      {
+        "key": "TOP_TITLE_2",
+        "value": "Party",
+        "type": "TEXT"
+      },
+      {
+        "key": "TITLE_1_LN_FontName",
+        "value": "Georgia Pro",
+        "type": "FONT"
+      },
+      {
+        "key": "TITLE_2_FontName",
+        "value": "Sloop Script Pro",
+        "type": "FONT"
+      }
+    ]
+  }
+}
